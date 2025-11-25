@@ -130,11 +130,11 @@ try:
         df_sentiment.to_excel(writer, sheet_name='4_Visual_Sentiment', index=False)
         df_relationship.to_excel(writer, sheet_name='5_People_Sentiment_Relationship', index=False)
     
-    print(f"✅ Success! All analysis results saved to a single Excel file: {OUTPUT_EXCEL_PATH}")
+    print(f"Success! All analysis results saved to a single Excel file: {OUTPUT_EXCEL_PATH}")
     
 except FileNotFoundError:
-    print(f"❌ Error: The file '{FILE_NAME}' was not found. Please ensure it is in the same directory as the script.")
+    print(f"Error: The file '{FILE_NAME}' was not found. Please ensure it is in the same directory as the script.")
 except Exception as e:
     # Print a more informative error message if the Excel save failed for some other reason
-    print(f"❌ An unexpected critical error occurred during analysis or saving: {e}")
+    print(f"An unexpected critical error occurred during analysis or saving: {e}")
     print("   Please check for data inconsistencies in your CSV or ensure 'openpyxl' is installed.")

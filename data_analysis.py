@@ -10,7 +10,7 @@ FILE_NAME = 'romanian_meme_analysis_results_local.csv'
 PEOPLE_COLUMN = 'who_is_in_images'
 VISUAL_CHAR_COLUMN = 'visual_characteristics'
 SENTIMENT_COLUMN = 'visual_sentiment'
-OUTPUT_EXCEL_PATH = 'meme_analysis_results_FINAL.xlsx' # Changed filename to prevent clash with potentially corrupt file
+OUTPUT_EXCEL_PATH = 'meme_analysis_results_FINAL.xlsx' 
 
 # --- 1. Data Cleaning and Counting Function ---
 def clean_and_count(df, column_name, ignore_terms=['unknown', 'no text', 'none', 'error', ''], n_top=50):
